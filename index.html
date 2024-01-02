@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <button class="btn2" onclick="popup_open()">Submitted</button>
+        <div class="container" id="container">
+            <h1>Thank you </h1>
+            <br></br>
+            <h3>Your data is submited</h3>
+            <br></br>
+            <button class="btn1" onclick="popup_close()">OK</button>
+        </div>
+       
+    </header>
+
+<style>
+
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        background-color: navy;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        position: fixed;
+    }
+
+    .container
+    {
+        background-color: white;
+        width: 25%;
+        height: 40vh;
+        margin-left: 35%;
+        margin-top: 18%;
+        visibility: hidden;
+      
+    }
+
+    h1{
+        margin-left: 30%;
+    }
+
+    h3{
+        margin-left: 30%;
+    }
+
+    .btn1{
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 10px 180px;
+        background-color: green;
+        color: white;
+        margin-top: 25%;
+        }
+
+        .btn2
+        {
+            background-color: white;
+            color: black;
+            padding: 10px 30px;
+            border: 2px solid white;
+            border-radius: 10px;
+            margin-left: 42%;
+            margin-top: 3%;
+        }
+
+        .open
+        {
+            visibility: visible;
+        }
+
+        .close
+        {
+            visibility: hidden;
+        }
+</style>
+
+<script>
+   let  popup  = document.getElementById('container');
+
+   function popup_open()
+   {
+    popup.classList.add('open');
+   }
+
+   function popup_close()
+   {
+    popup.classList.add('close');
+   }
+</script>
+
+</body>
+</html>
